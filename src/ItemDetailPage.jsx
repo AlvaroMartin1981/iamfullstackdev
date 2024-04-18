@@ -1,4 +1,19 @@
-import { useState } from "react";
+const ItemDetailPage = ({item}) => {
+
+  return (
+    <>
+      <h3>{item.title}</h3>
+      <p>Compled: {`${item.completed}`}</p>
+    </>
+ 
+  );
+};
+
+export default ItemDetailPage;
+
+
+
+/*import { useState } from "react";
 
 const ItemDetailPage = ({ item }) => {
   const [completed, setCompleted] = useState(item.completed); // Inicializamos el estado con el valor inicial de completado
@@ -44,4 +59,4 @@ const ItemDetailPage = ({ item }) => {
   );
 };
 
-export default ItemDetailPage;
+export default ItemDetailPage;*/
